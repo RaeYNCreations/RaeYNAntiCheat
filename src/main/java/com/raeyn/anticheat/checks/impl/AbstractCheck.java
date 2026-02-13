@@ -12,6 +12,10 @@ public abstract class AbstractCheck implements Check {
     
     protected final CheatType cheatType;
     
+    /**
+     * Constructs a new check with the specified cheat type
+     * @param cheatType the type of cheat this check detects
+     */
     public AbstractCheck(CheatType cheatType) {
         this.cheatType = cheatType;
     }
