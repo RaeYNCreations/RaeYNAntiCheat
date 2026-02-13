@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+out/
+bin/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# Minecraft/NeoForge
+run/
+logs/
+crash-reports/
+
+# macOS
+.DS_Store
+
+# Generated sources
+src/generated/
