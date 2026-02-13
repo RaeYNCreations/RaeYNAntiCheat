@@ -41,28 +41,27 @@ thresholds:
   # Maximum certainty level
   max-certainty: 100.0
 
-# Progressive Punishment System
+# Progressive Punishment System (RaeYNCheat-style)
 punishments:
   enabled: true
-  # Punishment escalation based on certainty
-  levels:
-    - certainty: 95.0
-      action: warn
-      message: "&e[AntiCheat] &cYou have been flagged for suspicious activity"
-    - certainty: 96.5
-      action: kick
-      message: "&cKicked for suspected cheating"
-    - certainty: 98.0
-      action: tempban
-      duration: 3600
-      message: "&cTemporarily banned for cheating (1 hour)"
-    - certainty: 99.0
-      action: tempban
-      duration: 86400
-      message: "&cTemporarily banned for cheating (24 hours)"
-    - certainty: 99.5
-      action: ban
-      message: "&cPermanently banned for cheating"
+  # Certainty threshold to trigger punishment (0-100)
+  certainty-threshold: 95.0
+  # Progressive punishment steps (in seconds)
+  # Each violation increases the punishment level
+  # 0 = warning only, -1 = permanent ban
+  # Maximum 30 steps allowed
+  steps:
+    - 0       # 1st violation: Warning only
+    - 60      # 2nd violation: 1 minute
+    - 300     # 3rd violation: 5 minutes
+    - 600     # 4th violation: 10 minutes
+    - 1800    # 5th violation: 30 minutes
+    - 3600    # 6th violation: 1 hour
+    - 7200    # 7th violation: 2 hours
+    - 14400   # 8th violation: 4 hours
+    - 28800   # 9th violation: 8 hours
+    - 86400   # 10th violation: 24 hours
+    - -1      # 11th+ violation: Permanent ban
 
 # Comprehensive Logging System
 logging:
