@@ -2,6 +2,8 @@ package com.raeyn.anticheat.config;
 
 import net.neoforged.neoforge.common.ModConfigSpec;
 
+import java.util.List;
+
 /**
  * Configuration manager for RaeYNAntiCheat
  * Uses NeoForge's configuration system

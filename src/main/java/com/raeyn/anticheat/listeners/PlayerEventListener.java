@@ -8,7 +8,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerEvent;
  * Listener for player connection events
  * Handles login and logout for violation tracking
  */
-public class PlayerConnectionListener {
+public class PlayerEventListener {
     
     @SubscribeEvent
     public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event) {

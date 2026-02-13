@@ -326,7 +326,7 @@ public class RaeYNCheatCommand {
         context.getSource().sendSuccess(() -> 
             Component.literal("§7Platform: §aNeoForge 1.21.1 (Server-Side Only)"), false);
         context.getSource().sendSuccess(() -> 
-            Component.literal("§7Cheat Types: §e27 detection modules"), false);
+            Component.literal("§7Cheat Types: §e25 detection modules"), false);
         context.getSource().sendSuccess(() -> 
             Component.literal("§7Punishment: §6Progressive (RaeYNCheat-style, Customizable)"), false);
         

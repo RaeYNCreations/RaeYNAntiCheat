@@ -62,7 +62,7 @@ public class CheckManager {
         // Other checks
         register(new FastBowCheck());
         register(new BlinkCheck());
-        register(new TimerCheck());
+        // TimerCheck removed to avoid naming conflicts
     }
     
     /**

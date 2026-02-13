@@ -184,4 +184,24 @@ public class RaeYNAntiCheat {
     public boolean isRaeYNCheatPresent() {
         return raeynCheatPresent;
     }
+    
+    /**
+     * Reload all components
+     */
+    public void reload() {
+        if (configManager != null) {
+            configManager = new ConfigManager();
+        }
+        if (violationTracker != null) {
+            violationTracker.reload();
+        }
+        if (punishmentManager != null) {
+            punishmentManager.reload();
+        }
+        if (checkManager != null) {
+            checkManager.reload();
+        }
+        
+        getLogger().info("RaeYNAntiCheat reloaded successfully");
+    }
 }

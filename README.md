@@ -8,7 +8,7 @@ An extension to [RaeYNCheat](https://github.com/RaeYNCreations/RaeYNCheat) to co
 
 ### Core Features
 - ✅ **Server-Side ONLY** - No client installation required
-- ✅ **Comprehensive Cheat Detection** - Covers 27 types of common cheats
+- ✅ **Comprehensive Cheat Detection** - Covers 25 types of common cheats
 - ✅ **Extremely High Performance** - Low tick impact, async processing where possible
 - ✅ **Not Super Aggressive, But Powerful** - Balanced detection to minimize false positives
 - ✅ **False Positive Tracker** - Automatic detection and mitigation of false positives
@@ -17,7 +17,7 @@ An extension to [RaeYNCheat](https://github.com/RaeYNCreations/RaeYNCheat) to co
 - ✅ **Comprehensive Logging** - File and console logging with rotation
 - ✅ **RaeYNCheat Integration** - Optional soft dependency, coordinates with boot protection
 
-### Cheat Detection (27 Types)
+### Cheat Detection (25 Types)
 
 #### Movement Cheats (5)
 - **Fly** - Unauthorized flying
@@ -55,6 +55,8 @@ An extension to [RaeYNCheat](https://github.com/RaeYNCreations/RaeYNCheat) to co
 #### Other Cheats (2)
 - **FastBow** - Shooting arrows without full draw
 - **Blink** - Packet manipulation / teleportation
+
+**Note**: Timer check was excluded to avoid naming conflicts.
 
 ### Progressive Punishment System
 
