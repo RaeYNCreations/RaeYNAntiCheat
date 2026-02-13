@@ -7,7 +7,15 @@ modId="${mod_id}"
 version="${mod_version}"
 displayName="${mod_name}"
 authors="${mod_authors}"
-description='''${mod_description}'''
+description='''${mod_description}
+
+Server-side ONLY anti-cheat mod - no client installation required.
+Works as a companion to RaeYNCheat (optional) to provide in-game cheat detection
+after boot protection is complete.'''
+
+# This mod is SERVER-SIDE ONLY
+[[mods.${mod_id}.properties]]
+serverSideOnly=true
 
 [[dependencies.${mod_id}]]
 modId="neoforge"
@@ -21,4 +29,12 @@ modId="minecraft"
 type="required"
 versionRange="${minecraft_version_range}"
 ordering="NONE"
+side="SERVER"
+
+# Soft dependency on RaeYNCheat - optional integration
+[[dependencies.${mod_id}]]
+modId="raeyncheat"
+type="optional"
+versionRange="[1.0.0,)"
+ordering="AFTER"
 side="SERVER"
